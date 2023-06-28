@@ -1,0 +1,44 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+    'header header'
+    'main side'
+    'footer footer';
+}
+
+header{
+    background-color: black;
+    color: #fff;
+    grid-area: header;
+}
+
+main{
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    grid-area: main;
+}
+
+aside{
+    color: brown;
+    grid-area: side;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    grid-area: footer;
+}
+
+header,
+main,
+aside,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
